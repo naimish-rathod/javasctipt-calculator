@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body{
+    background-color: beige;
+}
+marquee{
+    scroll-delay:1ms;
+}
+h1{
+	text-align: center;
+}
+ .maincalc{
+	 height: 589px;
+    width: 420px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 70px;
+    background: #000100;
+    border-radius: 10px;
+    padding: 13px;
+    box-shadow: 17px 14px 48px greenyellow, -17px -14px 48px greenyellow;
+}
+
+.input-num {
+    width: 367px;
+    height: 76px;
+    text-align: end;
+    background: #000100;
+    border: none;
+    font-size: 60px;
+    color: white;
+}
+.buttons{
+	height: 455px;
+}
+.btn-row1 {
+    gap: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+.click-btn {
+    width: 82px;
+    border: none;
+    height: 80px;
+    font-size: 26px;
+    border-radius: 24px;
+    box-shadow: 0px 5px 3px white , 0px 4px 15px gray;
+    transition:all 0.2 ease;
+}
+button:active{
+	box-shadow: none;
+	top: 8px;
+}
+.orng{
+	background-color: #6DC9CA;
+}
+.zero-btn{
+	width: 187px;
+	background-color: #6DC9CA;
+	color: black;
+} 
+.ans-clr{
+	width:132px ;
+}
+.del{
+	 width: 130px;
+	 background-color: #5bef3e;;
+}
+.clr1{
+	background-color:#FFEBBA;
+	color: black;
+}
+.clr2{
+	background-color:#FFD0B5;
+	color: black;
+}
+.clr3{
+	background-color:#FFB2B2;
+	color: black;
+}
+.dot-btn{
+	background-color: #6DC9CA;
+	color: black;
+}
+.scintific{
+    height: 682px;
+}
+ 
+.acnt-calc {
+    height: 782px;
+    width: 440px;
+}
+.btns-ac {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    padding-top: 15px;
+}
+.choice {
+    padding-top: 40px;
+}
+.calculator {
+    display: flex; 
+}
+.scintific {
+    display: none;
+}
+.acnt-calc {
+    display: none;
+}
+.choice-btn {
+    width: 84px;
+    border: none;
+    background-color: aqua;
+    border-radius: 22px;
+    height: 39px;
+    margin-top: 10px;
+    box-shadow: 2px 5px 10px;
+}
+.choice-btn:active{
+    box-shadow: none;
+}
+.acbtn{
+    width: 115px;
+}

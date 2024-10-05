@@ -1,0 +1,157 @@
+<html>
+  <head>
+  	<title>
+  		Calculator
+  	</title>
+ 		<link rel="stylesheet" type="text/css" href="calc_style.css">
+  </head>
+  <body>
+
+     <center><h1> Caclculator made using javascript</h1> </center> 
+
+    <center><div class="choice">
+      <h3>choose what type of calculator you want</h3>
+      <button id="basic" class="choice-btn">Basic</button>
+      <button  id="scince" class="choice-btn">Scientific </button> 
+      <button id="account" class="choice-btn">Account</button>
+  </div></center>
+
+    <div class="calculator">
+      <div class="maincalc" id="nor">
+      <input type="text" placeholder="0" class="input-num" id="ans-basic">
+      <div class="buttons">
+        <div class="btn-row1">
+          <button class="click-btn orng del " onclick="del()"> DEL </button>
+          <button class="click-btn orng del" onclick="exec()"> = </button>
+          <button class="click-btn orng" onclick="numr('%')"> % </button>
+        </div>
+        <div class="btn-row1">
+          <button class="click-btn num-btn clr1" onclick="numr('7')"> 7 </button>
+          <button class="click-btn num-btn clr2" onclick="numr('8')"> 8 </button>
+          <button class="click-btn num-btn clr3" onclick="numr('9')"> 9 </button>
+          <button class="click-btn orng" onclick="numr('/')"> / </button>
+        </div>
+        <div class="btn-row1">
+          <button class="click-btn num-btn clr1" onclick="numr('4')"> 4 </button>
+          <button class="click-btn num-btn clr2" onclick="numr('5')"> 5 </buttoś>
+          <button class="click-btn num-btn clr3" onclick="numr('6')"> 6 </button>
+          <button class="click-btn orng" onclick="numr('*')"> * </button>
+        </div>
+        <div class="btn-row1">
+          <button class="click-btn num-btn clr1" onclick="numr('1')"> 1 </button>
+          <button class="click-btn num-btn clr2" onclick="numr('2')"> 2 </button>
+          <button class="click-btn num-btn clr3" onclick="numr('3')"> 3 </button>
+          <button class="click-btn orng" onclick="numr('-')"> - </button>
+        </div>
+        <div class="btn-row1">
+          <button class="click-btn zero-btn num-btn" onclick="numr('0')"> 0 </button>
+          <button class="click-btn num-btn dot-btn" onclick="numr('.')"> . </button>
+          <button class="click-btn orng" onclick="numr('+')" onkeyup="numr('+')"> + </button>
+        </div>
+        
+      </div>
+    </div>
+
+  
+    <!-- scintific calculator -->
+
+    <div class="maincalc scintific" id="sci">
+      <input type="text" placeholder="0" class="input-num" id="ans-sci">
+      <div class="buttons">
+        <div class="btn-row1">
+          <button class="click-btn orng del " onclick="del()"> DEL </button>
+          <button class="click-btn orng del" onclick="exec()"> = </button>
+          <button class="click-btn orng" onclick="numr('%')"> % </button>
+        </div>
+         
+        <div class="btn-row1">
+          <button class="click-btn num-btn orng" onclick="sin()"> sin </button>
+          <button class="click-btn num-btn orng" onclick="cos()"> cos </button>
+          <button class="click-btn num-btn orng" onclick="tan()"> tan </button>
+          <button class="click-btn orng" onclick="square()"> x<sup>2</sup> </button>
+          <button class="click-btn orng" onclick="cube()"> x<sup>3</sup> </button>
+          <button class="click-btn num-btn orng" onclick="root()"> √ </button>
+  
+        </div>
+        
+        <div class="btn-row1">
+          <button class="click-btn num-btn clr1" onclick="numr('7')"> 7 </button>
+          <button class="click-btn num-btn clr2" onclick="numr('8')"> 8 </button>
+          <button class="click-btn num-btn clr3" onclick="numr('9')"> 9 </button>
+          <button class="click-btn orng" onclick="numr('/')"> / </button>
+        </div>
+        <div class="btn-row1">
+          <button class="click-btn num-btn clr1" onclick="numr('4')"> 4 </button>
+          <button class="click-btn num-btn clr2" onclick="numr('5')"> 5 </buttoś>
+          <button class="click-btn num-btn clr3" onclick="numr('6')"> 6 </button>
+          <button class="click-btn orng" onclick="numr('*')"> * </button>
+        </div>
+        <div class="btn-row1">
+          <button class="click-btn num-btn clr1" onclick="numr('1')"> 1 </button>
+          <button class="click-btn num-btn clr2" onclick="numr('2')"> 2 </button>
+          <button class="click-btn num-btn clr3" onclick="numr('3')"> 3 </button>
+          <button class="click-btn orng" onclick="numr('-')"> - </button>
+        </div>
+        <div class="btn-row1">
+          <button class="click-btn zero-btn num-btn" onclick="numr('0')"> 0 </button>
+          <button class="click-btn num-btn dot-btn" onclick="numr('.')"> . </button>
+          <button class="click-btn orng" onclick="numr('+')" onkeyup="numr('+')"> + </button>
+        </div>
+        
+      </div>
+    </div>
+
+<!-- Account calculator -->
+  <div class="maincalc acnt-calc" id="ac">
+      <input type="text" placeholder="0" class="input-num" id="ans-ac">
+      <div class="buttons">
+        <div class="btn-row1">
+          <button class="click-btn orng del " onclick="del()"> DEL </button>
+          <button class="click-btn orng del" onclick="exec()"> = </button> 
+          <button class="click-btn orng" onclick="numr('%')"> % </button>
+        </div>
+        <div class="btns-ac">
+          <button class="click-btn num-btn orng acbtn" onclick="Mu()"> MU </button>
+          <button class="click-btn num-btn orng acbtn" onclick="gstplus()"> GST+ </button>
+          <button class="click-btn num-btn orng acbtn" onclick="gstminus()"> GST- </button>
+
+         </div>
+         <div class="btns-ac">
+          <button class="click-btn num-btn orng acbtn" onclick="mMinus()"> M- </button>
+          <button class="click-btn num-btn orng acbtn" onclick="mPlus()"> M+ </button>
+           <button class="click-btn num-btn orng acbtn" onclick="mrc()"> MRC </button>
+         </div>
+        <div class="btn-row1">
+          <button class="click-btn num-btn clr1" onclick="numr('7')"> 7 </button>
+          <button class="click-btn num-btn clr2" onclick="numr('8')"> 8 </button>
+          <button class="click-btn num-btn clr3" onclick="numr('9')"> 9 </button>
+          <button class="click-btn orng" onclick="numr('/')"> / </button>
+        </div>
+        <div class="btn-row1">
+          <button class="click-btn num-btn clr1" onclick="numr('4')"> 4 </button>
+          <button class="click-btn num-btn clr2" onclick="numr('5')"> 5 </buttoś>
+          <button class="click-btn num-btn clr3" onclick="numr('6')"> 6 </button>
+          <button class="click-btn orng" onclick="numr('*')"> * </button>
+        </div>
+        <div class="btn-row1">
+          <button class="click-btn num-btn clr1" onclick="numr('1')"> 1 </button>
+          <button class="click-btn num-btn clr2" onclick="numr('2')"> 2 </button>
+          <button class="click-btn num-btn clr3" onclick="numr('3')"> 3 </button>
+          <button class="click-btn orng" onclick="numr('-')"> - </button>
+        </div>
+        <div class="btn-row1">
+          <button class="click-btn zero-btn num-btn" onclick="numr('0')"> 0 </button>
+          <button class="click-btn num-btn dot-btn " onclick="numr('.')"> . </button>
+          <button class="click-btn orng plusbtn" onclick="numr('+')" onkeyup="numr('+')"> + </button>
+          
+        </div>
+        
+      </div>
+    </div>  
+    </div>
+  
+  
+  
+  </body>
+  <script src="calc_prc.js"> </script>
+</html>
