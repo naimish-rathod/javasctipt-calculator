@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,7 +14,7 @@ h1{
 }
  .maincalc{
 	 height: 589px;
-    width: 420px;
+    width: 440px;
     border: 2px solid black;
     margin: 0 auto;
     margin-top: 70px;
@@ -67,7 +67,7 @@ button:active{
 	width:132px ;
 }
 .del{
-	 width: 130px;
+	 width: 133px;
 	 background-color: #5bef3e;;
 }
 .clr1{
@@ -91,7 +91,7 @@ button:active{
 }
  
 .acnt-calc {
-    height: 782px;
+    height: 744px;
     width: 440px;
 }
 .btns-ac {
@@ -124,6 +124,8 @@ button:active{
 .choice-btn:active{
     box-shadow: none;
 }
-.acbtn{
-    width: 115px;
+.acbtn {
+    width: 116px;
+    height: 62px;
 }
+ 
