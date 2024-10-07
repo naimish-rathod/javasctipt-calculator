@@ -6,9 +6,6 @@
 body{
     background-color: beige;
 }
-marquee{
-    scroll-delay:1ms;
-}
 h1{
 	text-align: center;
 }
@@ -129,7 +126,7 @@ button:active{
     height: 62px;
 }
 .maindiv{
-      display: block;
+    display: block;
     margin: 0 auto;
     position: absolute;
     top: 50%;
