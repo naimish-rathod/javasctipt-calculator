@@ -1,4 +1,4 @@
- 
+  
 const ansBasic = document.getElementById('ans-basic');
 const ansSci = document.getElementById('ans-sci');
 const ansAc = document.getElementById('ans-ac');
@@ -12,9 +12,19 @@ let numr = (val) => {
 
 //for logic of calculator
 function exec() {
+  
   let asnwer = currentcalc.value;
+
+if (asnwer === "" || asnwer === undefined)
+{
+     alert('Enter a value first');
+}
+else
+{
   let answ = eval(asnwer);
   currentcalc.value = answ;
+}
+
 }
 
 //for delete or empty text box
